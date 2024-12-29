@@ -1,3 +1,4 @@
+const bodyScreen = document.querySelector('body')
 const allScreen = document.getElementById('container-master');
 const popupCookie = document.getElementsByClassName('popup-cookie');
 const xCookie = document.querySelector('.cookie-flex-config > p');
@@ -7,6 +8,7 @@ const cookieList = [xCookie, buttonCookie]
 
 function genericAction() {
     allScreen.classList.remove('overlay');
+    allScreen.style.pointerEvents = 'auto';
     popupCookie[0].style.display = 'none';
 }
 
